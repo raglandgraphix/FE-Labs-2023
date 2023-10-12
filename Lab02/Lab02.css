@@ -59,7 +59,7 @@ of the elements on the page can help fix issues with spacing too, especially if 
 /* OPTIONAL ↓ REMOVE COMMENTS TO SEE RED BORDER:*/
 
 * {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 /* ---ELEMENT SELECTORS--- */
@@ -69,10 +69,15 @@ html {
   background: linear-gradient(180deg, #84daf5, #89ffff, #affffa, #ffffff);
 }
 body {
+  margin-top:1rem;
+  margin-bottom: 1rem;
+  margin-right: 5rem;
+
 }
 
 h1 {
   text-align: center;
+  box-shadow: 2px 2px 1px #0f6a9e;
 }
 h2 {
   margin: 4rem auto 1rem auto;
@@ -80,6 +85,7 @@ h2 {
 }
 p,
 li {
+font-size: 20px;
 }
 ol {
   padding: 20px;
@@ -89,19 +95,26 @@ ol li {
   padding: 10px 0;
 }
 img {
+  margin: 1rem;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .5);
 }
 figcaption {
   text-align: center;
   font-weight: bold;
+  color:rgb(0, 58, 66);
+  float: left;
 }
 footer {
   margin: 2rem 0 2rem 0;
+  text-align: center;
 }
 
 /* ---CUSTOM CLASS NAME SELECTORS--- */
 
 .banner-div {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 #banner-long {
@@ -110,10 +123,13 @@ footer {
 }
 #banner-short {
   width: 230px;
+  display: none;
 }
 .img-div {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+  
 }
 
 .tips-div {
@@ -161,8 +177,10 @@ footer {
     width: 230px;
   }
   #banner-long {
+    display: none;
   }
   #banner-short {
+    display: block;
   }
 }
 /* ------------------------- */
